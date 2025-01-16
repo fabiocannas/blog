@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ### ABOUT ME
 
-![profile_picture](https://media.licdn.com/dms/image/v2/D4D03AQFQx046LA0qpw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686746945269?e=1742428800&v=beta&t=hc951fjAyV51VuMs9UJfvfmjLf_7M43_vcxTCA7ims4)
+![profile_picture](https://media.licdn.com/dms/image/v2/D4D03AQFQx046LA0qpw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1686746945269?e=1742428800&v=beta&t=zZ0GQC8IU0cCAw6A2OarVIhVBX2DTVwOKQ7kE9UCtKI)
 
 Hello there! I’m Fabio Cannas, the writer of this blog. By profession, I am a cloud engineer with a particular interest in best practices on the Microsoft cloud platform and IAC. 
 I work at an Italian consulting company called PA Expertise.
