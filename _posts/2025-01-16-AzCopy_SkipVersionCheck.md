@@ -2,8 +2,8 @@
 title: "AzCopy - Skip Version Check"
 date: 2025-01-16
 ---
-Fun fact (maybe not so funny) for azcopy users. 
-Last night, a customer's automation task that uses azcopy sync command started triggering alerts.
+Fun fact (maybe not so funny) for azcopy users.
+Last night, a customer's automation task that uses **azcopy sync** command started triggering alerts.
 This was the error: 
 
 > RESPONSE STATUS CODE ERROR
@@ -17,10 +17,10 @@ This was the error:
 
 Luckily, despite these errors, the automation task execution was successful, so the files were synced correctly.
 
-I did a quick search and i ended up reading a discussion on the azcopy Github project, where an user was reporting the same problem.
+I did a quick search and i ended up reading a discussion on the [azcopy Github project](https://github.com/Azure/azure-storage-azcopy), where an user was reporting the same problem.
 
-Looks like azcopy performs a version check and it can fail sometimes. I did not find a documented way to disable the version check, but looking at commits i found the "skip-version-check" flag [see the commit](https://github.com/Azure/azure-storage-azcopy/pull/1950/commits/b7544becdf0ce161fc2cad58b56db4dd8fbabe5a).
+Looks like azcopy performs a version check and it can fail sometimes. I did not find a documented way to disable the version check, but looking at commits i found the **"skip-version-check"** flag [see the commit](https://github.com/Azure/azure-storage-azcopy/pull/1950/commits/b7544becdf0ce161fc2cad58b56db4dd8fbabe5a).
 
-Adding --skip-version-check=true to azcopy sync command resolved the issue.
+Adding **--skip-version-check=true** to **azcopy sync** command resolved the issue.
 
 To sum up, version check failures do not impact on the correct execution of the azcopy operations and the annoying version check failure logs can be suppressed using the aforementioned flag.
