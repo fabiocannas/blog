@@ -6,14 +6,14 @@ Fun fact (maybe not so funny) for azcopy users.
 Last night, a customer's automation task that uses azcopy sync command started triggering alerts.
 This was the error: 
 
-RESPONSE STATUS CODE ERROR
- GET https://azcopyvnextrelease.blob.core.windows.net/releasemetadata/latest_version.txt?timeout=901
- Accept: application/xml
- User-Agent: AzCopy/10.27.1 azsdk-go-azblob/v1.4.0 (go1.23.1; Windows_NT)
- X-Ms-Client-Request-Id: <request-id>
- x-ms-version: 2024-05-04
- --------------------------------------------------------------------------------
- RESPONSE Status: 401 Server failed to authenticate the request. Please refer to the information in the www-authenticate header.
+> RESPONSE STATUS CODE ERROR
+> GET https://azcopyvnextrelease.blob.core.windows.net/releasemetadata/latest_version.txt?timeout=901
+> Accept: application/xml
+> User-Agent: AzCopy/10.27.1 azsdk-go-azblob/v1.4.0 (go1.23.1; Windows_NT)
+> X-Ms-Client-Request-Id: <request-id>
+> x-ms-version: 2024-05-04
+> --------------------------------------------------------------------------------
+> RESPONSE Status: 401 Server failed to authenticate the request. Please refer to the information in the www-authenticate header.
 
 Luckily, despite these errors, the automation task execution was successful, so the files were synced correctly.
 
