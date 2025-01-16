@@ -18,9 +18,9 @@ theme: minima
 # add a line comment on "theme: minima" above.
 #remote_theme: jekyll/minima
 
-#plugins:
- # - jekyll-feed
- # - jekyll-seo-tag
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Theme-specific settings
 
@@ -57,3 +57,6 @@ social_links:
     - platform: linkedin  # same as SVG filename.
       user_url: "https://www.linkedin.com/in/fabio-cannas-911380113/"  # URL of profile page.
       title:  My profile at linkedin.com
+      
+github_username: fabiocannas
+linkedin_username: fabio-cannas-911380113
