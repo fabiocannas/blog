@@ -17,7 +17,7 @@ I hold the following certifications:
 - Microsoft Certified: DevOps Engineer Expert
 - Microsoft Certified: Azure Developer Associate
 - Microsoft Certified: Fabric Analytics Engineer Associate
-  Microsoft Certified Solutions Associate: Web applications
+- Microsoft Certified Solutions Associate: Web applications
 - Microsoft Certified Solutions Associate: App Builder
 - Microsoft Certified Professional
 			
