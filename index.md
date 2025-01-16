@@ -1,4 +1,4 @@
 ---
-Among the cloud: Welcome to my blog
+Among the clouds: Welcome to my blog
 ---
 
