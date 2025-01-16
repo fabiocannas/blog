@@ -25,7 +25,7 @@ I hold the following certifications:
 			
 ### THIS BLOG
 
-For a long time, I thought about setting up a work-related blog to share knowledge and help others. I use to read a lot of blogs at work when facing challenges at work. Many times, I’ve found valuable insights from others who have been in similar situations. However, there have been moments when I couldn’t find the information I needed, and that’s when I realized the importance of sharing my own experiences.
+For a long time, I thought about setting up a work-related blog to share knowledge and help others. I use to read a lot of blogs when facing challenges at work. Many times, I’ve found valuable insights from others who have been in similar situations. However, there have been moments when I couldn’t find the information I needed, and that’s when I realized the importance of sharing my own experiences.
 
 Before I set up this blog, the solutions lived only in my head/notes, or I shared them just with my closest colleagues. 
 Today, this blog allows a much larger group of people to benefit from that information, and also serves as “thanks” to the community whose blogs have helped me in the past.
