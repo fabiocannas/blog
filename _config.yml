@@ -49,14 +49,6 @@ minima:
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #date_format: "%b-%d-%Y"
 
-  # Generate social links in footer.
-social_links:
-    - platform: github  # same as SVG filename.
-      user_url: "https://github.com/fabiocannas"  # URL of profile page.
-      title:  My profile at github.com
-    - platform: linkedin  # same as SVG filename.
-      user_url: "https://www.linkedin.com/in/fabio-cannas-911380113/"  # URL of profile page.
-      title:  My profile at linkedin.com
-      
+# Generate social links in footer.
 github_username: fabiocannas
 linkedin_username: fabio-cannas-911380113

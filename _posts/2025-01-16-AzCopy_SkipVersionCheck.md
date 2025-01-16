@@ -7,7 +7,7 @@ Last night, a customer's automation task that uses azcopy sync command started t
 This was the error: 
 
 RESPONSE STATUS CODE ERROR
- GET (https://azcopyvnextrelease.blob.core.windows.net/releasemetadata/latest_version.txt?timeout=901)
+ GET https://azcopyvnextrelease.blob.core.windows.net/releasemetadata/latest_version.txt?timeout=901
  Accept: application/xml
  User-Agent: AzCopy/10.27.1 azsdk-go-azblob/v1.4.0 (go1.23.1; Windows_NT)
  X-Ms-Client-Request-Id: <request-id>
@@ -19,7 +19,7 @@ Luckily, despite these errors, the automation task execution was successful, so 
 
 I did a quick search and i ended up reading a discussion on the azcopy Github project, where an user was reporting the same problem.
 
-Looks like azcopy performs a version check and it can fail sometimes. I did not find a documented way to disable the version check, but looking at commits i found the "skip-version-check" flag (https://github.com/Azure/azure-storage-azcopy/pull/1950/commits/b7544becdf0ce161fc2cad58b56db4dd8fbabe5a).
+Looks like azcopy performs a version check and it can fail sometimes. I did not find a documented way to disable the version check, but looking at commits i found the "skip-version-check" flag [see the commit](https://github.com/Azure/azure-storage-azcopy/pull/1950/commits/b7544becdf0ce161fc2cad58b56db4dd8fbabe5a).
 
 Adding --skip-version-check=true to azcopy sync command resolved the issue.
 
