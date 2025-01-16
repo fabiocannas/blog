@@ -1,8 +1,9 @@
 ---
 layout: page
-title: About me
+title: About
 permalink: /about/
 ---
+### ABOUT ME
 Hello there! I’m Fabio Cannas, the writer of this blog. By profession, I am a cloud engineer with a particular interest in best practices on the Microsoft cloud platform and IAC. 
 I work at an Italian consulting company called PA Expertise.
 
