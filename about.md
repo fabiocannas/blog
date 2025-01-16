@@ -7,10 +7,10 @@ permalink: /about/
 
 ![profile_picture](https://media.licdn.com/dms/image/v2/D4D03AQFQx046LA0qpw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1686746945269?e=1742428800&v=beta&t=zZ0GQC8IU0cCAw6A2OarVIhVBX2DTVwOKQ7kE9UCtKI)
 
-Hello there! I’m Fabio Cannas, the writer of this blog. By profession, I am a cloud engineer with a particular interest in best practices on the Microsoft cloud platform and IAC. 
+Hello there! I’m Fabio Cannas, the writer of this blog. By profession, I am a cloud engineer with a particular interest in best practices on the Microsoft Azure cloud platform and IAC. 
 I work at an Italian consulting company called PA Expertise.
 
-I’ve been participating in software development projects involving Microsoft technologies for almost a decade. I began my career by doing full-stack software development on Windows Server on-premises environments. However, for the past six years, I’ve worked purely with Microsoft cloud services. I design and implement different kinds of solutions for my customers, such as web applications, APIs, integrations and other background processes, and review solutions made by others for quality, cost optimization and security issues.
+I’ve been participating in software development projects involving Microsoft technologies for almost a decade. I began my career by doing full-stack software development on Windows Server on-premises environments. However, for the past six years, I’ve worked purely with Microsoft Azure cloud services. I design and implement different kinds of solutions for my customers, such as web applications, APIs, integrations and other background processes, and review solutions made by others for quality, cost optimization and security issues.
 
 I hold the following certifications:
 

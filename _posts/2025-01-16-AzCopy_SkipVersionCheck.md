@@ -17,7 +17,7 @@ This was the error:
 
 Luckily, despite these errors, the automation task execution was successful, so the files were synced correctly.
 
-I did a quick search and i ended up reading a discussion on the [azcopy Github project](https://github.com/Azure/azure-storage-azcopy), where an user was reporting the same problem.
+I did a quick search and i ended up reading a discussion on the [azcopy Github project](https://github.com/Azure/azure-storage-azcopy), where a user was reporting the same problem.
 
 Looks like azcopy performs a version check and it can fail sometimes. I did not find a documented way to disable the version check, but looking at commits i found the **"skip-version-check"** flag [see the commit](https://github.com/Azure/azure-storage-azcopy/pull/1950/commits/b7544becdf0ce161fc2cad58b56db4dd8fbabe5a).
 
