@@ -10,7 +10,9 @@ permalink: /about/
 Hello there! I’m Fabio Cannas, the writer of this blog. By profession, I am a cloud engineer with a particular interest in best practices on the Microsoft Azure cloud platform and IAC. 
 I work at an Italian consulting company called PA Expertise.
 
-I’ve been participating in software development projects involving Microsoft technologies for almost a decade. I began my career by doing full-stack software development on Windows Server on-premises environments. However, for the past six years, I’ve worked purely with Microsoft Azure cloud services. I design and implement different kinds of solutions for my customers, such as web applications, APIs, integrations and other background processes, and review solutions made by others for quality, cost optimization and security issues.
+I have nearly a decade of experience in software development projects involving Microsoft technologies. 
+My career began with full-stack development on Windows Server on-premises environments. For the past six years, I’ve specialized in Microsoft Azure cloud services. 
+I design and implement various solutions for my customers, including web applications, APIs, integrations, and other background processes. Additionally, I review solutions created by others to ensure quality, cost optimization, and security.
 
 I hold the following certifications:
 
