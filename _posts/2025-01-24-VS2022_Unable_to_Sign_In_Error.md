@@ -8,7 +8,7 @@ Today a colleague who was using Visual Studio 2022 Professional (the latest vers
 
 ![plot](./posts/screenshots/2025-01-24-VS2022_Unable_to_Sign_In_Error.png)
 
-After doing some research on the web, I found an issue on the developer community [Issue](https://developercommunity.visualstudio.com/t/VS2022-Professional---Unable-to-sign-in-/10795473), where a user was reporting the same problem.
+After doing some research on the web, I found an [issue](https://developercommunity.visualstudio.com/t/VS2022-Professional---Unable-to-sign-in-/10795473) on the developer community, where a user was reporting the same problem.
 
 The problem is known and Microsoft has released a fix in preview, but in the meanwhile the workaround is:
 
