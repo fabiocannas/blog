@@ -10,7 +10,8 @@ permalink: /about/
 Hello there! I’m Fabio Cannas, the writer of this blog. By profession, I am a cloud engineer with a particular interest in best practices on the Microsoft Azure cloud platform and IAC. 
 I work at an Italian consulting company called Alveo Expertise.
 
-I’ve been participating in software development projects involving Microsoft technologies for almost a decade. I began my career by doing full-stack software development. For the past six years, I’ve worked purely with Microsoft Azure cloud services. I design and implement different kinds of solutions for my customers, such as web applications, APIs, integrations and other background processes.
+I’ve been participating in software development projects involving Microsoft technologies for almost a decade. I began my career by doing full-stack software development. 
+For the past six years, I’ve worked purely with Microsoft Azure cloud services. I design and implement different kinds of solutions for my customers, such as web applications, APIs, integrations and other background processes.
 
 I hold the following certifications:
 
