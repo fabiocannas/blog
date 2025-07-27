@@ -14,6 +14,8 @@ To stay updated about Azure Meetup Casteddu events, I invite you to join the com
 
 [Join Azure Meetup Casteddu - Meetup page](https://www.meetup.com/it-IT/azure-meetup-casteddu/)
 
+[Follow Azure Meetup Casteddu on LinkedIn](https://www.linkedin.com/company/azure-meetup-casteddu/posts/?feedView=all)
+
 # Azure Developer CLI (azd)
 
 ## The common Azure Development Challenges
@@ -272,3 +274,5 @@ azd up
 [Join Azure Meetup Casteddu on Whatsapp](https://chat.whatsapp.com/E1m2qrQ4V8E15OLgGAkWFg=)
 
 [Join Azure Meetup Casteddu - Meetup page](https://www.meetup.com/it-IT/azure-meetup-casteddu/)
+
+[Follow Azure Meetup Casteddu on LinkedIn](https://www.linkedin.com/company/azure-meetup-casteddu/posts/?feedView=all)
