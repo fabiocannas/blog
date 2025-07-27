@@ -1,12 +1,16 @@
+---
+title: "The Azure Developer's Superpower: azd CLI"
+date: 2025-07-27
+---
 After a somewhat lengthy pause, it was time to update my blog. 
 
 Following is the content of my session at the Azure Meetup Casteddu, held a few days ago at Sa Manifattura, Cagliari.
 
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_flyer.png?raw=true)
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_flyer.jpg?raw=true)
 
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_intro_slide.png?raw=true)
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_intro_slide.jpg?raw=true)
 
-To stay updated about Azure Meetup Casteddu events, I invite you to subscribe to the Whatsapp channel:
+To stay updated about Azure Meetup Casteddu events, I invite you to join the community:
 
 [Join Azure Meetup Casteddu on Whatsapp](https://chat.whatsapp.com/E1m2qrQ4V8E15OLgGAkWFg=)
 
@@ -46,23 +50,45 @@ azd CLI provides best practice, developer-friendly commands that map to key stag
 
 > **Note:** Azure Developer CLI ≠ Azure CLI
 
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_comparison.png?raw=true) 
+| Tool                | Sample Command                                                                 | Outcome                                                                                   |
+|---------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| Azure Developer CLI | `azd provision`                                                               | Provisions multiple Azure resources required for an app based on project resources and configurations, such as an Azure resource group, an Azure App Service web app and app service plan, an Azure Storage account, and an Azure Key Vault. |
+| Azure CLI           | `az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name myWebApp` | Provisions a new web app in the specified resource group and app service plan.            |
+| Azure PowerShell    | `New-AzWebApp -ResourceGroupName "myResourceGroup" -Name "myWebApp" -AppServicePlan "myAppServicePlan"` | Provisions a new web app in the specified resource group and app service plan.            |
 
-[source - Compare Azure Developer CLI commands](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands?WT.mc_id=AZ-MVP-5004796#compare-azure-developer-cli-commands)
+[source - aka.ms/learn - Compare Azure Developer CLI commands](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/azd-commands?WT.mc_id=AZ-MVP-5004796#compare-azure-developer-cli-commands)
 
 ## Features
 
 ### Supported Azure compute services (host)
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_supported_az_compure_services.png?raw=true) 
+| Azure compute service    | Feature Stage  |
+| ------------------------ | -------------- |
+| Azure App Service        | Stable         |
+| Azure Static Web Apps    | Stable         |
+| Azure Container Apps     | Beta           |
+| Azure Functions          | Stable         |
+| Azure Kubernetes Service | Beta (only for projects deployable via `kubectl apply -f`)    |
+| Azure Spring Apps        | Beta           |
+
+[source - aka.ms/learn - azd CLI Supported Azure Compute Services](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/supported-languages-environments#supported-azure-compute-services-host)
 
 ### Supported languages and frameworks
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_supported_languages.png?raw=true) 
+| Language | Feature Stage |
+| -------- | -----------   |
+| Node.js  | Stable        |
+| Python   | Stable        |
+| .NET     | Stable        |
+| Java     | Stable        |
+
+[source - aka.ms/learn - azd CLI Supported Languages and Framework](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/supported-languages-environments#supported-languages-and-framework)
 
 ### Template library - [AWESOME-AZD](aka.ms/awesome-azd)
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_awesome.png?raw=true) 
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_awesome.jpg?raw=true) 
 
 ### Develop your own templates
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_custom_templates.png?raw=true) 
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_custom_templates.jpg?raw=true) 
+
+[source - aka.ms/learn - Make azd Compatible](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/make-azd-compatible)
 
 ## Template Structure
 - `.azure` folder - Contains essential Azure configurations and environment variables, such as the location to deploy resources or other subscription information
@@ -108,30 +134,32 @@ azd monitor
 azd down
 ```
 
-### azd auth login
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_auth_login.png?raw=true) 
+Below you will see the commands in action:
 
-### azd init
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_init.png?raw=true)
+### azd auth login - Let's authenticate to Azure
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_auth_login.jpg?raw=true) 
 
-### azd init - let's take a look to the .azure folder
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_init_dotazure_folder.png?raw=true)
+### azd init - Let's download a template and then initialize the workspace
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_init.jpg?raw=true)
 
-### azd up (hold on tight! haha)
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_up_1.png?raw=true)
+### azd init - Let's take a look to the .azure folder
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_init_dotazure_folder.jpg?raw=true)
 
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_up_2.png?raw=true)
+### azd up - This is my favorite command. Hold on tight! haha
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_up_1.jpg?raw=true)
 
-### azd show
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_show.png?raw=true)
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_up_2.jpg?raw=true)
+
+### azd show - Let's have a look at the apps that we just published
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_show.jpg?raw=true)
 
 ### azd deploy - Let's publish changes to the webapp
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_deploy.png?raw=true)
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_deploy.jpg?raw=true)
 
-### azd monitor
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_monitor.png?raw=true)
+### azd monitor - Finally, we can monitor our application 
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_monitor.jpg?raw=true)
 
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_monitor_az_portal_dashboard.png?raw=true)
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_monitor_az_portal_dashboard.jpg?raw=true)
 
 `TIP: run the following command to go to Application Insights Live Metrics`
 
@@ -140,7 +168,7 @@ azd monitor --live
 ```
 
 ### azd down
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_down.png?raw=true)
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_azd_down.jpg?raw=true)
 
 
 ## CI/CD Pipeline Support
@@ -239,4 +267,10 @@ azd up
 
 ### Blog: [Azure SDK Blog](https://devblogs.microsoft.com/azure-sdk/tag/azure-developer-cli/)
 
+See you at the next Azure Meetup Casteddu events!
 
+![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_fabio_cannas.jpg?raw=true)
+
+[Join Azure Meetup Casteddu on Whatsapp](https://chat.whatsapp.com/E1m2qrQ4V8E15OLgGAkWFg=)
+
+[Join Azure Meetup Casteddu - Meetup page](https://www.meetup.com/it-IT/azure-meetup-casteddu/)
