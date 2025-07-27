@@ -6,8 +6,6 @@ After a somewhat lengthy pause, it was time to update my blog.
 
 Following is the content of my session at the Azure Meetup Casteddu, held a few days ago at Sa Manifattura, Cagliari.
 
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_flyer.jpg?raw=true)
-
 ![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_intro_slide.jpg?raw=true)
 
 To stay updated about Azure Meetup Casteddu events, I invite you to join the community:
@@ -97,14 +95,16 @@ azd CLI provides best practice, developer-friendly commands that map to key stag
 - `azure.yaml` file - A configuration file that defines services and maps them to Azure resources
 
 ## Workflows
+
 ### azd init workflows
 1. Scan current directory: Analyzes existing app codebase to generate appropriate configuration
 2. Select a template: Clones and initializes a template from gallery
 3. Create a minimal project: Initializes basic azure.yaml file
+ 
 ### azd up workflow
-1. Packaging: prepares the application code and dependencies
-2. Provisioning: creates and configures Azure resources
-3. Deployment: deploys the packaged application
+5. Packaging: prepares the application code and dependencies
+6. Provisioning: creates and configures Azure resources
+7. Deployment: deploys the packaged application
 
 ## azd CLI Zero to Hero in 8 Commands
 
@@ -267,9 +267,7 @@ azd up
 
 ### Blog: [Azure SDK Blog](https://devblogs.microsoft.com/azure-sdk/tag/azure-developer-cli/)
 
-See you at the next Azure Meetup Casteddu events!
-
-![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_fabio_cannas.jpg?raw=true)
+### See you at the next Azure Meetup Casteddu events!
 
 [Join Azure Meetup Casteddu on Whatsapp](https://chat.whatsapp.com/E1m2qrQ4V8E15OLgGAkWFg=)
 
