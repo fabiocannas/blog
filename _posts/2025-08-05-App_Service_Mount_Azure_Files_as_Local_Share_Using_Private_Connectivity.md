@@ -1,5 +1,5 @@
 ---
-title: "App Service with Azure Files mount as local share. Did you know?"
+title: "App Service with Azure Files mount as local share, using private connectivity. Did you know?"
 date: 2025-08-05
 ---
 You are working on an Azure infrastructure that must implement private connectivity.
