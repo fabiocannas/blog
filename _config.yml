@@ -4,7 +4,9 @@ author:
     Fabio Cannas
   email: >
     fabio.cannas@outlook.com
-
+site:
+  url: https://amongtheclouds.github.io
+  baseurl: "" # The subpath of your site, e.g. /blog
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
