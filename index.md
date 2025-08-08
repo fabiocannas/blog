@@ -1,8 +1,7 @@
 ---
 Among the clouds: Welcome to my blog
-permalink: /
+permalink: /blog
 redirect_from:
     - /
-    - /blog/
 ---
 
