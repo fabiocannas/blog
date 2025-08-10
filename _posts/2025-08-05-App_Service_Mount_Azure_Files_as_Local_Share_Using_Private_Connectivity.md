@@ -13,7 +13,7 @@ Inbound private access to the app and to the storage account is granted through 
 You already configured the fileshare mount on App Service, but the app is unable to read from the fileshare.
 
 Why?
-<!--more-->
+
 ![Math lady meme](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGlmb2gxMHRqZ2R4eGRiN2QxYTZucmRhNjZlaTlhZDZyMWV3cW05OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRQBXSCnEFJIuxktnw/giphy.gif)
 
 The reasons could be many, but one important thing to know is the following: 

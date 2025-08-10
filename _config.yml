@@ -8,10 +8,7 @@ author:
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
   Microsoft Azure Cloud engineering, automation, DevOps and more…
-
-show_excerpts: true
-excerpt_separator: "<!--more-->"
-paginate: true
+  
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
