@@ -5,7 +5,7 @@ date: 2025-07-27
 After a somewhat lengthy pause, it was time to update my blog. 
 
 Following is the content of my session at the Azure Meetup Casteddu, held a few days ago at Sa Manifattura, Cagliari.
-
+<!--more-->
 ![plot](https://github.com/fabiocannas/blog/blob/main/_posts/2025-07-27-The_Azure_Developers_Superpower_azd_CLI/2025-07-27-The_Azure_Developers_Superpower_azd_CLI_intro_slide.jpg?raw=true)
 
 To stay updated about Azure Meetup Casteddu events, I invite you to join the community:

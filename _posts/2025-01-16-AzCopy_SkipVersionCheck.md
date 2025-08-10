@@ -5,7 +5,7 @@ date: 2025-01-16
 Fun fact (maybe not so funny) for azcopy users.
 Last night, a customer's automation task that uses **azcopy sync** command started triggering alerts.
 This was the error: 
-
+<!--more-->
 > RESPONSE STATUS CODE ERROR
 > GET https://azcopyvnextrelease.blob.core.windows.net/releasemetadata/latest_version.txt?timeout=901
 > Accept: application/xml

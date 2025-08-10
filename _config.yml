@@ -11,6 +11,7 @@ description: >
 
 site:
   show_excerpts: true
+  excerpt_separator: "<!--more-->"
   paginate: true
 # Build settings
 

@@ -4,7 +4,7 @@ date: 2025-07-31
 ---
 The Azure Log Analytics Workspace is a powerful tool for collecting and analyzing telemetry data in Azure Monitor. 
 However, uncontrolled data ingestion can lead to unexpected costs. In this post, we’ll explore how to use Azure Resource Graph (ARG) to identify Log Analytics Workspaces across your tenant and monitor their ingestion volume, helping you implement capping strategies to stay within budget.
-
+<!--more-->
 ### Why Cap Log Analytics Workspace Ingestion?
 Azure charges for Log Analytics Workspace based on the volume of data ingested. Without proper controls, ingestion can spike due to:
 - Excessive data from monitored resources
