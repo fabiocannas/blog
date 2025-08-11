@@ -10,6 +10,9 @@ description: >
   Microsoft Azure Cloud engineering, automation, DevOps and more…
 
 google_analytics: G-E7DJ7GD6R9
+url: fabiocannas.github.io
+disqus:
+  shortname: fabiocannas
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
