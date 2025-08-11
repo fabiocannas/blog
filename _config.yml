@@ -8,7 +8,8 @@ author:
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
   Microsoft Azure Cloud engineering, automation, DevOps and more…
-  
+
+google_analytics: G-E7DJ7GD6R9
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
@@ -44,7 +45,11 @@ minima:
   # solarized-dark	   Dark variant of solarized color scheme.
   # solarized	         Adaptive skin for solarized color scheme skins.
   skin: dark
-  
+  show_excerpts: true
+  social_links:
+    - title: LinkedIn
+      platform: linkedin
+      user_url: "https://www.linkedin.com/in/fabio-cannas-911380113
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
