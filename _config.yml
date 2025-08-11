@@ -49,7 +49,8 @@ minima:
   social_links:
     - title: LinkedIn
       platform: linkedin
-      user_url: "https://www.linkedin.com/in/fabio-cannas-911380113
+      user_url: "https://www.linkedin.com/in/fabio-cannas-911380113"
+
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
